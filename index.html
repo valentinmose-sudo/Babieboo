@@ -7,16 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="stars"></div>
-    
     <!-- Navigation Tabs -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">💖 Babieboo 💖</div>
+            <div class="logo">🎂 Babieboo 💕</div>
             <div class="tabs">
                 <button class="tab-btn active" onclick="showTab('home')">🏠 Home</button>
-                <button class="tab-btn" onclick="showTab('gallery')">📸 Gallery</button>
-                <button class="tab-btn" onclick="showTab('letter')">💌 Love Letter</button>
+                <button class="tab-btn" onclick="showTab('shop')">🛍️ Valentin's Shop</button>
             </div>
         </div>
     </nav>
@@ -24,87 +21,20 @@
     <!-- HOME TAB -->
     <div id="home" class="tab-content active">
         <div class="home-container">
-            <h1 class="title">Happy Birthday Babie! 🎉</h1>
-            <p class="subtitle">You're turning 27 and you're absolutely amazing!</p>
             
-            <!-- Countdown Timer -->
-            <div class="countdown-box">
-                <h2 id="countdown-text" class="countdown-text"></h2>
-                <div class="countdown-timer">
-                    <div class="countdown-item">
-                        <span id="days" class="countdown-number">00</span>
-                        <span class="countdown-label">Days</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="hours" class="countdown-number">00</span>
-                        <span class="countdown-label">Hours</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="minutes" class="countdown-number">00</span>
-                        <span class="countdown-label">Minutes</span>
-                    </div>
-                    <div class="countdown-item">
-                        <span id="seconds" class="countdown-number">00</span>
-                        <span class="countdown-label">Seconds</span>
-                    </div>
+            <!-- Hero Section with Title and Image -->
+            <div class="hero-section">
+                <h1 class="hero-title">Happy Birthday Babie! 🎉</h1>
+                <div class="hero-image-container">
+                    <div class="hero-image-placeholder">[Your Photo of Babie Here]</div>
                 </div>
             </div>
 
-            <!-- Random Photos Section -->
-            <div class="random-photos-home">
-                <h3>Our Favorite Moments ✨</h3>
-                <div class="random-photos-grid">
-                    <div class="random-photo-placeholder">Photo 1</div>
-                    <div class="random-photo-placeholder">Photo 2</div>
-                    <div class="random-photo-placeholder">Photo 3</div>
-                    <div class="random-photo-placeholder">Photo 4</div>
-                </div>
-            </div>
-
-            <!-- Heart Animation -->
-            <div class="hearts">
-                <div class="heart">💕</div>
-                <div class="heart">💖</div>
-                <div class="heart">💗</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- GALLERY TAB -->
-    <div id="gallery" class="tab-content">
-        <div class="gallery-container">
-            <h2>Our Beautiful Memories 📸</h2>
-            <div class="gallery-grid">
-                <!-- 15 Photo Placeholders (you'll add your photos here) -->
-                <div class="gallery-item"><div class="photo-placeholder">Photo 1</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 2</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 3</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 4</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 5</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 6</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 7</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 8</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 9</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 10</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 11</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 12</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 13</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 14</div></div>
-                <div class="gallery-item"><div class="photo-placeholder">Photo 15</div></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- LOVE LETTER TAB -->
-    <div id="letter" class="tab-content">
-        <div class="letter-container">
-            <h2>A Letter From My Heart 💌</h2>
-            
             <!-- Envelope Button -->
             <div class="envelope-wrapper">
                 <div class="envelope" id="envelope" onclick="openEnvelope()">
                     <div class="envelope-front">
-                        <span class="envelope-text">💌 Click to Open 💌</span>
+                        <span class="envelope-text">💌 Open Letter 💌</span>
                     </div>
                 </div>
             </div>
@@ -127,21 +57,109 @@
                 </div>
             </div>
 
-            <!-- Random Photos in Letter Tab -->
-            <div class="random-photos-letter">
-                <h3>More Memories 💫</h3>
-                <div class="random-photos-grid">
-                    <div class="random-photo-placeholder">Photo 1</div>
-                    <div class="random-photo-placeholder">Photo 2</div>
-                </div>
-            </div>
-
-            <!-- Spotify Embed Placeholder -->
+            <!-- Spotify Embed Section -->
             <div class="spotify-section">
-                <h3>Our Song 🎵</h3>
+                <h3>🎵 Our Song</h3>
                 <div class="spotify-placeholder">
                     [SPOTIFY EMBED WILL GO HERE]
                 </div>
+            </div>
+
+            <!-- Gallery Section (6 Photos) -->
+            <div class="gallery-section">
+                <h2>Our Beautiful Memories 📸</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><div class="photo-placeholder">Photo 1</div></div>
+                    <div class="gallery-item"><div class="photo-placeholder">Photo 2</div></div>
+                    <div class="gallery-item"><div class="photo-placeholder">Photo 3</div></div>
+                    <div class="gallery-item"><div class="photo-placeholder">Photo 4</div></div>
+                    <div class="gallery-item"><div class="photo-placeholder">Photo 5</div></div>
+                    <div class="gallery-item"><div class="photo-placeholder">Photo 6</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VALENTIN'S SHOP TAB -->
+    <div id="shop" class="tab-content">
+        <div class="shop-container">
+            <h2>🛍️ Valentin's Shop 🛍️</h2>
+            <p class="shop-subtitle">Redeemable Coupons - Prices in Beijos (Kisses)</p>
+            
+            <div class="shop-grid">
+                
+                <!-- Coupon Item 1 -->
+                <div class="shop-item">
+                    <div class="item-header">
+                        <h3>Breakfast in Bed</h3>
+                        <span class="price">5 beijos</span>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>Wake up to a delicious breakfast prepared with love. Your choice of pancakes, eggs, or pastries served with coffee or tea.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 2 -->
+                <div class="shop-item">
+                    <div class="item-header">
+                        <h3>Movie Night</h3>
+                        <span class="price">3 beijos</span>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>Pick any movie and we'll watch it together with snacks and cuddles. No phone distractions - just us and the film.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 3 -->
+                <div class="shop-item">
+                    <div class="item-header">
+                        <h3>Massage & Spa</h3>
+                        <span class="price">8 beijos</span>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>Relaxing full-body massage and pampering session. Includes candles, soft music, and all the comfort you deserve.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 4 -->
+                <div class="shop-item">
+                    <div class="item-header">
+                        <h3>Dinner Date</h3>
+                        <span class="price">10 beijos</span>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>A romantic dinner at your favorite restaurant or a homemade gourmet meal prepared just for you.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 5 -->
+                <div class="shop-item">
+                    <div class="item-header">
+                        <h3>Adventure Day</h3>
+                        <span class="price">7 beijos</span>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>A full day of fun activities of your choice - hiking, exploring the city, visiting museums, or anything else you'd like!</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 6 -->
+                <div class="shop-item">
+                    <div class="item-header">
+                        <h3>Surprise Date</h3>
+                        <span class="price">6 beijos</span>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>I plan a special surprise date for you! It's a mystery until the day comes - trust me, it will be amazing!</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
