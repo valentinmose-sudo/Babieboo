@@ -1,27 +1,154 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>For You ❤️</title>
-  <style>
-    body {
-      background-color: #ffe6e6;
-      font-family: Arial;
-      text-align: center;
-      padding: 50px;
-    }
-    h1 {
-      color: #ff4d6d;
-    }
-    p {
-      font-size: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Babie 💕</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="stars"></div>
+    
+    <!-- Navigation Tabs -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💖 Babieboo 💖</div>
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('home')">🏠 Home</button>
+                <button class="tab-btn" onclick="showTab('gallery')">📸 Gallery</button>
+                <button class="tab-btn" onclick="showTab('letter')">💌 Love Letter</button>
+            </div>
+        </div>
+    </nav>
 
-  <h1>For You ❤️</h1>
-  <p>I made this just for you.</p>
-  <p>You mean everything to me.</p>
+    <!-- HOME TAB -->
+    <div id="home" class="tab-content active">
+        <div class="home-container">
+            <h1 class="title">Happy Birthday Babie! 🎉</h1>
+            <p class="subtitle">You're turning 27 and you're absolutely amazing!</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown-box">
+                <h2 id="countdown-text" class="countdown-text"></h2>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <span id="days" class="countdown-number">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours" class="countdown-number">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes" class="countdown-number">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds" class="countdown-number">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Random Photos Section -->
+            <div class="random-photos-home">
+                <h3>Our Favorite Moments ✨</h3>
+                <div class="random-photos-grid">
+                    <div class="random-photo-placeholder">Photo 1</div>
+                    <div class="random-photo-placeholder">Photo 2</div>
+                    <div class="random-photo-placeholder">Photo 3</div>
+                    <div class="random-photo-placeholder">Photo 4</div>
+                </div>
+            </div>
+
+            <!-- Heart Animation -->
+            <div class="hearts">
+                <div class="heart">💕</div>
+                <div class="heart">💖</div>
+                <div class="heart">💗</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY TAB -->
+    <div id="gallery" class="tab-content">
+        <div class="gallery-container">
+            <h2>Our Beautiful Memories 📸</h2>
+            <div class="gallery-grid">
+                <!-- 15 Photo Placeholders (you'll add your photos here) -->
+                <div class="gallery-item"><div class="photo-placeholder">Photo 1</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 2</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 3</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 4</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 5</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 6</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 7</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 8</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 9</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 10</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 11</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 12</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 13</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 14</div></div>
+                <div class="gallery-item"><div class="photo-placeholder">Photo 15</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LOVE LETTER TAB -->
+    <div id="letter" class="tab-content">
+        <div class="letter-container">
+            <h2>A Letter From My Heart 💌</h2>
+            
+            <!-- Envelope Button -->
+            <div class="envelope-wrapper">
+                <div class="envelope" id="envelope" onclick="openEnvelope()">
+                    <div class="envelope-front">
+                        <span class="envelope-text">💌 Click to Open 💌</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Love Letter Content (Hidden until envelope is clicked) -->
+            <div id="letter-content" class="letter-content" style="display: none;">
+                <div class="letter-paper">
+                    <h3>My Dearest Babie,</h3>
+                    
+                    <!-- ⭐ PASTE YOUR MESSAGE HERE ⭐ -->
+                    <p>
+                        [INSERT YOUR LOVE LETTER HERE]
+                        
+                        Write your heartfelt message, memories, and reasons why you love her.
+                        You can make it as long or short as you'd like!
+                    </p>
+                    <!-- ⭐ END OF MESSAGE AREA ⭐ -->
+
+                    <p class="signature">Forever yours,<br>With all my love ❤️</p>
+                </div>
+            </div>
+
+            <!-- Random Photos in Letter Tab -->
+            <div class="random-photos-letter">
+                <h3>More Memories 💫</h3>
+                <div class="random-photos-grid">
+                    <div class="random-photo-placeholder">Photo 1</div>
+                    <div class="random-photo-placeholder">Photo 2</div>
+                </div>
+            </div>
+
+            <!-- Spotify Embed Placeholder -->
+            <div class="spotify-section">
+                <h3>Our Song 🎵</h3>
+                <div class="spotify-placeholder">
+                    [SPOTIFY EMBED WILL GO HERE]
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
 </body>
 </html>
