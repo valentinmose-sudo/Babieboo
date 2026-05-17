@@ -45,7 +45,7 @@ function revealCoupon(button) {
 // CONFETTI ANIMATION
 function triggerConfetti() {
     const confettiContainer = document.getElementById('confetti-container');
-    const colors = ['#c41e3a', '#8b008b', '#d4af37', '#ff69b4', '#ff4500'];
+    const colors = ['#ff6b9d', '#ff8fab', '#ffb3d9', '#ffc4e0', '#ff69b4'];
 
     for (let i = 0; i < 50; i++) {
         const confetti = document.createElement('div');

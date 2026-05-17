@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts">
+        <div class="heart">💕</div>
+        <div class="heart">💖</div>
+        <div class="heart">💗</div>
+        <div class="heart">💝</div>
+        <div class="heart">💕</div>
+    </div>
+
     <!-- Navigation Tabs -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">🎂 Babieboo 💕</div>
+            <div class="logo">💕 Babieboo 💕</div>
             <div class="tabs">
-                <button class="tab-btn active" onclick="showTab('home')">🏠 Home</button>
-                <button class="tab-btn" onclick="showTab('shop')">🛍️ Valentin's Shop</button>
+                <button class="tab-btn active" onclick="showTab('home')">Home</button>
+                <button class="tab-btn" onclick="showTab('shop')">Valentin's Shop</button>
             </div>
         </div>
     </nav>
@@ -25,40 +34,40 @@
             <!-- Hero Section with Title and Image -->
             <div class="hero-section">
                 <h1 class="hero-title">Happy Birthday Babie! 🎉</h1>
-                <div class="hero-image-container">
+                <div class="hero-image-card">
                     <div class="hero-image-placeholder">[Your Photo of Babie Here]</div>
                 </div>
             </div>
 
-            <!-- Envelope Button -->
-            <div class="envelope-wrapper">
+            <!-- Envelope Button Card -->
+            <div class="card envelope-card">
                 <div class="envelope" id="envelope" onclick="openEnvelope()">
-                    <div class="envelope-front">
-                        <span class="envelope-text">💌 Open Letter 💌</span>
-                    </div>
+                    <span class="envelope-text">💌 Open My Letter 💌</span>
                 </div>
             </div>
 
             <!-- Love Letter Content (Hidden until envelope is clicked) -->
             <div id="letter-content" class="letter-content" style="display: none;">
-                <div class="letter-paper">
-                    <h3>My Dearest Babie,</h3>
-                    
-                    <!-- ⭐ PASTE YOUR MESSAGE HERE ⭐ -->
-                    <p>
-                        [INSERT YOUR LOVE LETTER HERE]
+                <div class="card letter-card">
+                    <div class="letter-paper">
+                        <h3>My Dearest Babie,</h3>
                         
-                        Write your heartfelt message, memories, and reasons why you love her.
-                        You can make it as long or short as you'd like!
-                    </p>
-                    <!-- ⭐ END OF MESSAGE AREA ⭐ -->
+                        <!-- ⭐ PASTE YOUR MESSAGE HERE ⭐ -->
+                        <p>
+                            [INSERT YOUR LOVE LETTER HERE]
+                            
+                            Write your heartfelt message, memories, and reasons why you love her.
+                            You can make it as long or short as you'd like!
+                        </p>
+                        <!-- ⭐ END OF MESSAGE AREA ⭐ -->
 
-                    <p class="signature">Forever yours,<br>With all my love ❤️</p>
+                        <p class="signature">Forever yours,<br>With all my love ❤️</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Spotify Embed Section -->
-            <div class="spotify-section">
+            <div class="card spotify-card">
                 <h3>🎵 Our Song</h3>
                 <div class="spotify-placeholder">
                     [SPOTIFY EMBED WILL GO HERE]
@@ -83,13 +92,13 @@
     <!-- VALENTIN'S SHOP TAB -->
     <div id="shop" class="tab-content">
         <div class="shop-container">
-            <h2>🛍️ Valentin's Shop 🛍️</h2>
+            <h2 class="shop-title">🛍️ Valentin's Shop 🛍️</h2>
             <p class="shop-subtitle">Redeemable Coupons - Prices in Beijos (Kisses)</p>
             
             <div class="shop-grid">
                 
                 <!-- Coupon Item 1 -->
-                <div class="shop-item">
+                <div class="card shop-item">
                     <div class="item-header">
                         <h3>Breakfast in Bed</h3>
                         <span class="price">5 beijos</span>
@@ -101,7 +110,7 @@
                 </div>
 
                 <!-- Coupon Item 2 -->
-                <div class="shop-item">
+                <div class="card shop-item">
                     <div class="item-header">
                         <h3>Movie Night</h3>
                         <span class="price">3 beijos</span>
@@ -113,7 +122,7 @@
                 </div>
 
                 <!-- Coupon Item 3 -->
-                <div class="shop-item">
+                <div class="card shop-item">
                     <div class="item-header">
                         <h3>Massage & Spa</h3>
                         <span class="price">8 beijos</span>
@@ -125,7 +134,7 @@
                 </div>
 
                 <!-- Coupon Item 4 -->
-                <div class="shop-item">
+                <div class="card shop-item">
                     <div class="item-header">
                         <h3>Dinner Date</h3>
                         <span class="price">10 beijos</span>
@@ -137,7 +146,7 @@
                 </div>
 
                 <!-- Coupon Item 5 -->
-                <div class="shop-item">
+                <div class="card shop-item">
                     <div class="item-header">
                         <h3>Adventure Day</h3>
                         <span class="price">7 beijos</span>
@@ -149,7 +158,7 @@
                 </div>
 
                 <!-- Coupon Item 6 -->
-                <div class="shop-item">
+                <div class="card shop-item">
                     <div class="item-header">
                         <h3>Surprise Date</h3>
                         <span class="price">6 beijos</span>
