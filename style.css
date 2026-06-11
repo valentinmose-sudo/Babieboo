@@ -187,14 +187,15 @@ body {
 
 .hero-image-card {
     margin: 0 auto 2rem;
-    max-width: 500px;
+    max-width: 350px;
+    width: 100%;
 }
 
 .hero-image {
     width: 100%;
-    height: 400px;
+    height: 350px;
     object-fit: cover;
-    border-radius: 30px;
+    border-radius: 25px;
     box-shadow: 0 12px 40px rgba(231, 76, 60, 0.2);
     display: block;
 }
@@ -288,7 +289,7 @@ body {
 }
 
 .letter-paper {
-    background: linear-gradient(135deg, #fff9f7 0%, #ffe8e0 100%);
+    background: linear-gradient(135deg, #fff5f1 0%, #ffe8e0 100%);
     border-radius: 20px;
     padding: 2.5rem;
     border-left: 5px solid #e74c3c;
@@ -534,8 +535,12 @@ body {
         font-size: 2.2rem;
     }
 
+    .hero-image-card {
+        max-width: 280px;
+    }
+
     .hero-image {
-        height: 300px;
+        height: 280px;
     }
 
     .envelope {
@@ -563,6 +568,14 @@ body {
 
     .hero-title {
         font-size: 1.8rem;
+    }
+
+    .hero-image-card {
+        max-width: 250px;
+    }
+
+    .hero-image {
+        height: 250px;
     }
 
     .tabs {
