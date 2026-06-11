@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', 'Arial', sans-serif;
-    background: linear-gradient(135deg, #fff5f7 0%, #ffe0e6 50%, #ffd9e3 100%);
+    background: #faf6f1;
     min-height: 100vh;
     color: #5a5a5a;
     overflow-x: hidden;
@@ -28,7 +28,7 @@ body {
 .heart {
     position: absolute;
     font-size: 3rem;
-    opacity: 0.1;
+    opacity: 0.08;
     animation: float 6s ease-in-out infinite;
 }
 
@@ -73,12 +73,12 @@ body {
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 8px 30px rgba(255, 107, 157, 0.2);
+    box-shadow: 0 8px 30px rgba(231, 76, 60, 0.25);
 }
 
 .nav-container {
@@ -109,7 +109,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     font-weight: 600;
-    color: #ff6b9d;
+    color: #e74c3c;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
@@ -117,14 +117,14 @@ body {
 
 .tab-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.2);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.2);
     background: white;
 }
 
 .tab-btn.active {
     background: white;
-    color: #ff6b9d;
-    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.3);
+    color: #e74c3c;
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
 }
 
 /* Tab Content */
@@ -152,12 +152,12 @@ body {
 
 /* Card Styling */
 .card {
-    background: rgba(255, 255, 255, 0.9);
+    background: white;
     border-radius: 30px;
     padding: 2rem;
-    box-shadow: 0 12px 40px rgba(255, 107, 157, 0.15);
+    box-shadow: 0 12px 40px rgba(231, 76, 60, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 200, 220, 0.3);
+    border: 1px solid rgba(231, 76, 60, 0.1);
 }
 
 /* HOME TAB */
@@ -177,7 +177,7 @@ body {
 
 .hero-title {
     font-size: 3.5rem;
-    background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 2rem;
@@ -190,18 +190,47 @@ body {
     max-width: 500px;
 }
 
-.hero-image-placeholder {
+.hero-image {
     width: 100%;
     height: 400px;
-    background: linear-gradient(135deg, #ffb3d9 0%, #ffc4e0 100%);
+    object-fit: cover;
     border-radius: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 1.1rem;
-    font-weight: 600;
-    box-shadow: 0 12px 40px rgba(255, 107, 157, 0.2);
+    box-shadow: 0 12px 40px rgba(231, 76, 60, 0.2);
+    display: block;
+}
+
+/* Video Card */
+.video-card {
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.video-card h3 {
+    color: #e74c3c;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.15);
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
 }
 
 /* Envelope Card */
@@ -214,20 +243,20 @@ body {
 .envelope {
     width: 100%;
     height: 250px;
-    background: linear-gradient(135deg, #ff6b9d 0%, #ff8fab 100%);
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
     border-radius: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 40px rgba(255, 107, 157, 0.25);
+    box-shadow: 0 12px 40px rgba(231, 76, 60, 0.25);
     transition: all 0.3s ease;
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .envelope:hover {
     transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 16px 50px rgba(255, 107, 157, 0.35);
+    box-shadow: 0 16px 50px rgba(231, 76, 60, 0.35);
 }
 
 .envelope-text {
@@ -259,13 +288,14 @@ body {
 }
 
 .letter-paper {
-    background: linear-gradient(135deg, #fff9fb 0%, #ffe8f0 100%);
+    background: linear-gradient(135deg, #fff9f7 0%, #ffe8e0 100%);
     border-radius: 20px;
     padding: 2.5rem;
+    border-left: 5px solid #e74c3c;
 }
 
 .letter-paper h3 {
-    color: #ff6b9d;
+    color: #e74c3c;
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     font-style: italic;
@@ -283,7 +313,7 @@ body {
     text-align: right;
     margin-top: 2rem;
     font-style: italic;
-    color: #ff8fab;
+    color: #e74c3c;
     font-weight: 600;
 }
 
@@ -295,9 +325,10 @@ body {
 }
 
 .spotify-card h3 {
-    color: #ff6b9d;
+    color: #e74c3c;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
+    font-weight: 700;
 }
 
 .spotify-placeholder {
@@ -320,7 +351,7 @@ body {
 
 .gallery-section h2 {
     font-size: 2rem;
-    color: #ff6b9d;
+    color: #e74c3c;
     text-align: center;
     margin-bottom: 2.5rem;
     font-weight: 700;
@@ -337,24 +368,24 @@ body {
 .gallery-item {
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(255, 107, 157, 0.15);
+    box-shadow: 0 12px 30px rgba(231, 76, 60, 0.15);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .gallery-item:hover {
     transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 16px 40px rgba(255, 107, 157, 0.25);
+    box-shadow: 0 16px 40px rgba(231, 76, 60, 0.25);
 }
 
 .photo-placeholder {
     width: 100%;
     height: 250px;
-    background: linear-gradient(135deg, #ffb3d9, #ffc4e0);
+    background: linear-gradient(135deg, #f5a8a0 0%, #f08d8d 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
     font-size: 1rem;
 }
@@ -370,7 +401,7 @@ body {
 
 .shop-title {
     font-size: 2.5rem;
-    background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -398,7 +429,7 @@ body {
 
 .shop-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 16px 50px rgba(255, 107, 157, 0.2);
+    box-shadow: 0 16px 50px rgba(231, 76, 60, 0.2);
 }
 
 .item-header {
@@ -407,17 +438,17 @@ body {
     align-items: flex-start;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(255, 107, 157, 0.2);
+    border-bottom: 2px solid rgba(231, 76, 60, 0.2);
 }
 
 .item-header h3 {
-    color: #ff6b9d;
+    color: #e74c3c;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
 .price {
-    background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 50px;
@@ -427,7 +458,7 @@ body {
 }
 
 .reveal-btn {
-    background: linear-gradient(135deg, #ff6b9d, #ff8fab);
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
     color: white;
     border: none;
     padding: 1rem 1.5rem;
@@ -437,20 +468,20 @@ body {
     transition: all 0.3s ease;
     width: 100%;
     font-size: 1rem;
-    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.2);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.2);
 }
 
 .reveal-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.3);
+    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
 }
 
 .coupon-content {
     margin-top: 1.5rem;
     padding: 1.5rem;
-    background: linear-gradient(135deg, #fff5f7, #ffe8f0);
+    background: linear-gradient(135deg, #fff5f1, #ffe8e0);
     border-radius: 15px;
-    border-left: 4px solid #ff6b9d;
+    border-left: 4px solid #e74c3c;
     animation: slideDown 0.4s ease;
 }
 
@@ -503,7 +534,7 @@ body {
         font-size: 2.2rem;
     }
 
-    .hero-image-placeholder {
+    .hero-image {
         height: 300px;
     }
 
