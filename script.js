@@ -1,3 +1,8 @@
+// Trigger confetti on page load
+document.addEventListener('DOMContentLoaded', function() {
+    triggerConfetti();
+});
+
 // Tab Navigation
 function showTab(tabName) {
     // Hide all tabs
