@@ -73,12 +73,12 @@ body {
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    background: linear-gradient(135deg, #FEB4C6 0%, #FAA0BD 100%);
     padding: 1.5rem 0;
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 8px 30px rgba(231, 76, 60, 0.25);
+    box-shadow: 0 8px 30px rgba(254, 180, 198, 0.25);
 }
 
 .nav-container {
@@ -109,7 +109,7 @@ body {
     border-radius: 50px;
     cursor: pointer;
     font-weight: 600;
-    color: #e74c3c;
+    color: #FEB4C6;
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     font-size: 0.95rem;
@@ -117,14 +117,14 @@ body {
 
 .tab-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 6px 20px rgba(254, 180, 198, 0.2);
     background: white;
 }
 
 .tab-btn.active {
     background: white;
-    color: #e74c3c;
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.3);
+    color: #FEB4C6;
+    box-shadow: 0 6px 20px rgba(254, 180, 198, 0.3);
 }
 
 /* Tab Content */
@@ -155,9 +155,9 @@ body {
     background: white;
     border-radius: 30px;
     padding: 2rem;
-    box-shadow: 0 12px 40px rgba(231, 76, 60, 0.1);
+    box-shadow: 0 12px 40px rgba(254, 180, 198, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(231, 76, 60, 0.1);
+    border: 1px solid rgba(254, 180, 198, 0.1);
 }
 
 /* HOME TAB */
@@ -177,7 +177,7 @@ body {
 
 .hero-title {
     font-size: 3.5rem;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #FEB4C6, #FAA0BD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 2rem;
@@ -196,7 +196,7 @@ body {
     height: 350px;
     object-fit: cover;
     border-radius: 25px;
-    box-shadow: 0 12px 40px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 12px 40px rgba(254, 180, 198, 0.2);
     display: block;
 }
 
@@ -207,7 +207,7 @@ body {
 }
 
 .video-card h3 {
-    color: #e74c3c;
+    color: #FEB4C6;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     text-align: center;
@@ -221,7 +221,7 @@ body {
     height: 0;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.15);
+    box-shadow: 0 8px 25px rgba(254, 180, 198, 0.15);
 }
 
 .video-container iframe {
@@ -244,20 +244,20 @@ body {
 .envelope {
     width: 100%;
     height: 250px;
-    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    background: linear-gradient(135deg, #FEB4C6 0%, #FAA0BD 100%);
     border-radius: 25px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 12px 40px rgba(231, 76, 60, 0.25);
+    box-shadow: 0 12px 40px rgba(254, 180, 198, 0.25);
     transition: all 0.3s ease;
     border: 3px solid rgba(255, 255, 255, 0.3);
 }
 
 .envelope:hover {
     transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 16px 50px rgba(231, 76, 60, 0.35);
+    box-shadow: 0 16px 50px rgba(254, 180, 198, 0.35);
 }
 
 .envelope-text {
@@ -292,11 +292,11 @@ body {
     background: linear-gradient(135deg, #fff5f1 0%, #ffe8e0 100%);
     border-radius: 20px;
     padding: 2.5rem;
-    border-left: 5px solid #e74c3c;
+    border-left: 5px solid #FEB4C6;
 }
 
 .letter-paper h3 {
-    color: #e74c3c;
+    color: #FEB4C6;
     font-size: 1.6rem;
     margin-bottom: 1.5rem;
     font-style: italic;
@@ -314,7 +314,7 @@ body {
     text-align: right;
     margin-top: 2rem;
     font-style: italic;
-    color: #e74c3c;
+    color: #FEB4C6;
     font-weight: 600;
 }
 
@@ -326,7 +326,7 @@ body {
 }
 
 .spotify-card h3 {
-    color: #e74c3c;
+    color: #FEB4C6;
     margin-bottom: 1.5rem;
     font-size: 1.3rem;
     font-weight: 700;
@@ -352,7 +352,7 @@ body {
 
 .gallery-section h2 {
     font-size: 2rem;
-    color: #e74c3c;
+    color: #FEB4C6;
     text-align: center;
     margin-bottom: 2.5rem;
     font-weight: 700;
@@ -369,20 +369,20 @@ body {
 .gallery-item {
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 12px 30px rgba(231, 76, 60, 0.15);
+    box-shadow: 0 12px 30px rgba(254, 180, 198, 0.15);
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .gallery-item:hover {
     transform: scale(1.05) translateY(-5px);
-    box-shadow: 0 16px 40px rgba(231, 76, 60, 0.25);
+    box-shadow: 0 16px 40px rgba(254, 180, 198, 0.25);
 }
 
 .photo-placeholder {
     width: 100%;
     height: 250px;
-    background: linear-gradient(135deg, #f5a8a0 0%, #f08d8d 100%);
+    background: linear-gradient(135deg, #FED8E8 0%, #FECAD8 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -402,7 +402,7 @@ body {
 
 .shop-title {
     font-size: 2.5rem;
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #FEB4C6, #FAA0BD);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
@@ -430,7 +430,7 @@ body {
 
 .shop-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 16px 50px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 16px 50px rgba(254, 180, 198, 0.2);
 }
 
 .item-header {
@@ -439,17 +439,17 @@ body {
     align-items: flex-start;
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid rgba(231, 76, 60, 0.2);
+    border-bottom: 2px solid rgba(254, 180, 198, 0.2);
 }
 
 .item-header h3 {
-    color: #e74c3c;
+    color: #FEB4C6;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
 .price {
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #FEB4C6, #FAA0BD);
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 50px;
@@ -459,7 +459,7 @@ body {
 }
 
 .reveal-btn {
-    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    background: linear-gradient(135deg, #FEB4C6, #FAA0BD);
     color: white;
     border: none;
     padding: 1rem 1.5rem;
@@ -469,12 +469,12 @@ body {
     transition: all 0.3s ease;
     width: 100%;
     font-size: 1rem;
-    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.2);
+    box-shadow: 0 6px 20px rgba(254, 180, 198, 0.2);
 }
 
 .reveal-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(231, 76, 60, 0.3);
+    box-shadow: 0 10px 30px rgba(254, 180, 198, 0.3);
 }
 
 .coupon-content {
@@ -482,7 +482,7 @@ body {
     padding: 1.5rem;
     background: linear-gradient(135deg, #fff5f1, #ffe8e0);
     border-radius: 15px;
-    border-left: 4px solid #e74c3c;
+    border-left: 4px solid #FEB4C6;
     animation: slideDown 0.4s ease;
 }
 
