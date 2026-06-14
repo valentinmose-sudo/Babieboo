@@ -412,7 +412,7 @@ body {
 
 .gallery-full-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -553,6 +553,57 @@ body {
     }
 }
 
+/* Countdown Timer */
+.countdown-card {
+    margin: 0 auto 2.5rem;
+    max-width: 900px;
+    text-align: center;
+}
+
+.countdown-title {
+    font-size: 1.4rem;
+    color: #FEB4C6;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.countdown-number {
+    background: linear-gradient(135deg, #FEB4C6, #FAA0BD);
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 800;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(254, 180, 198, 0.3);
+    min-width: 80px;
+}
+
+.countdown-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 /* Confetti */
 #confetti-container {
     position: fixed;
@@ -606,7 +657,7 @@ body {
     }
 
     .gallery-full-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }
 
@@ -657,7 +708,7 @@ body {
     }
 
     .gallery-full-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
 
