@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Happy Birthday Babie 💕</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts">
+        <div class="heart">💕</div>
+        <div class="heart">💖</div>
+        <div class="heart">💗</div>
+        <div class="heart">💝</div>
+        <div class="heart">💕</div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">💕 Babieboo 💕</div>
+            <div class="tabs">
+                <button class="tab-btn active" onclick="showTab('home')">Home</button>
+                <button class="tab-btn" onclick="showTab('gallery')">Gallery</button>
+                <button class="tab-btn" onclick="showTab('moments')">Our Moments</button>
+                <button class="tab-btn" onclick="showTab('shop')">Valentin's Shop</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME TAB -->
+    <div id="home" class="tab-content active">
+        <div class="home-container">
+            
+            <!-- Hero Section with Title and Image -->
+            <div class="hero-section">
+                <h1 class="hero-title">Happy Birthday Babie! 🎉</h1>
+                <div class="hero-image-card">
+                    <img src="Nayara.jpg" alt="Babie" class="hero-image">
+                </div>
+            </div>
+
+            <!-- Video Section -->
+            <div class="card video-card">
+                <h3>🎬 Watch Me</h3>
+                <div class="video-container">
+                    <iframe 
+                        width="100%" 
+                        height="500" 
+                        src="https://www.youtube.com/embed/ITJ3aCM1YxA" 
+                        title="Birthday Video" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Envelope Button Card -->
+            <div class="card envelope-card">
+                <div class="envelope" id="envelope" onclick="openEnvelope()">
+                    <span class="envelope-text">💌 My Letter To You 💌</span>
+                </div>
+            </div>
+
+            <!-- Love Letter Content (Hidden until envelope is clicked) -->
+            <div id="letter-content" class="letter-content" style="display: none;">
+                <div class="card letter-card">
+                    <div class="letter-paper">
+                        <p class="letter-handwriting">Hi my dear,</p>
+                        <p class="letter-handwriting">First of all Happy Birthday!!! I'm sorry I still can't tell you what your birthday present is, you will just have to wait until Sunday to find out. I'm really sad I can't be there today to celebrate with you, I would have loved to be there with you, go to your nice dinner, and fall asleep hugging each other. The good news is I will have you all of next week.</p>
+                        <p class="letter-handwriting">With each passing year I seem to love you more and more and even though it is hard at times not being able to see each other every day, I am excited to continue growing together through the ups and downs, and feel us growing closer together with each passing week, month, year.</p>
+                        <p class="letter-handwriting">I'm wishing you a happy happy birthday and hope you get one step closer this year to achieving your dreams and most importantly can enjoy the journey you are on and take a step back to be proud of yourself and realize everything you have achieved. I know I am really proud of you and am so happy I have you in my life.</p>
+                        <p class="letter-handwriting signature-handwriting">Te amo amor ❤️</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spotify Embed Section -->
+            <div class="card spotify-card">
+                <h3>🎵 Your Birthday Song</h3>
+                <p class="spotify-caption">Go shawty its your birthday, we gonna party like its your birthday 🎂</p>
+                <iframe
+                    src="https://open.spotify.com/embed/track/4RY96Asd9IefaL3X4LOLZ8"
+                    width="100%"
+                    height="152"
+                    frameborder="0"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    style="border-radius: 20px;">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- GALLERY TAB -->
+    <div id="gallery" class="tab-content">
+        <div class="gallery-container">
+            <h1 class="gallery-title">Our Beautiful Memories 📸</h1>
+            
+            <!-- About Us -->
+            <div class="card about-card">
+                <h2 class="about-title">About Us</h2>
+                <p class="about-text">We have been together for 2 years, 2 months, and 31 days ❤️<br><br>We have come a long way since first meeting each other and have experienced many things, traveled to many places, started new chapters in life together, and supported each other through it all. On this page you can find some of my favorite memories (I could add 1,000 more photos)</p>
+            </div>
+
+            <!-- Relationship Countdown Timer -->
+            <div class="card countdown-card">
+                <h2 class="countdown-title">💕 Together Since March 16, 2024 💕</h2>
+                <div class="countdown-timer">
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="years">0</div>
+                        <div class="countdown-label">Years</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="months">0</div>
+                        <div class="countdown-label">Months</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="days">0</div>
+                        <div class="countdown-label">Days</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="hours">0</div>
+                        <div class="countdown-label">Hours</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="minutes">0</div>
+                        <div class="countdown-label">Minutes</div>
+                    </div>
+                    <div class="countdown-item">
+                        <div class="countdown-number" id="seconds">0</div>
+                        <div class="countdown-label">Seconds</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-full-grid">
+                <div class="gallery-item-full">
+                    <img src="IMG_0724.JPG" alt="Memory 1" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_1509.JPG" alt="Memory 2" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_2172.JPG" alt="Memory 3" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_2519.JPG" alt="Memory 4" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_2765.JPG" alt="Memory 5" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_5577.JPG" alt="Memory 6" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_5601.JPG" alt="Memory 7" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_5663.JPG" alt="Memory 8" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_5696.JPG" alt="Memory 9" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_6007.JPG" alt="Memory 10" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_6135.JPG" alt="Memory 11" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_6247.JPG" alt="Memory 12" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_6409.JPG" alt="Memory 13" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_6540.JPG" alt="Memory 14" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_7379.JPG" alt="Memory 15" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_7946.JPG" alt="Memory 16" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_8065.JPG" alt="Memory 17" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_8193.JPG" alt="Memory 18" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_8224.JPG" alt="Memory 19" class="gallery-image">
+                </div>
+                <div class="gallery-item-full">
+                    <img src="IMG_8427.JPG" alt="Memory 20" class="gallery-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OUR MOMENTS TAB -->
+    <div id="moments" class="tab-content">
+        <div class="moments-container">
+            <h1 class="moments-title">Our Moments 💕</h1>
+
+            <!-- Moment 1: image left, text right -->
+            <div class="moment-row">
+                <div class="moment-image-wrap">
+                    <img src="Watch.JPG" alt="When we became a couple" class="moment-image">
+                </div>
+                <div class="moment-text-wrap">
+                    <h3 class="moment-title-text">When we became a couple</h3>
+                    <p class="moment-desc">Our first weekend as a couple, it really was love at first sight because when you came over the second time I couldn't keep my eyes off you and I immediately wanted you all over me as soon as we got into my apartment. Here you can see the watch, where we went to the store and I called you "good girl" for the first time. It was the happiest moment when you said yes after I asked you to be my girlfriend.</p>
+                </div>
+            </div>
+
+            <!-- Moment 2: image right, text left -->
+            <div class="moment-row moment-row-reverse">
+                <div class="moment-image-wrap">
+                    <img src="Italy.JPG" alt="Our first vacation" class="moment-image">
+                </div>
+                <div class="moment-text-wrap">
+                    <h3 class="moment-title-text">Our first vacation</h3>
+                    <p class="moment-desc">I was so nervous traveling together for the first time, but it turned out to be such a nice trip (even though you were worried I would kidnap you). We went to a lot of beaches, drank a lot of Aperol, and really enjoyed each other's company.</p>
+                </div>
+            </div>
+
+            <!-- Moment 3: image left, text right -->
+            <div class="moment-row">
+                <div class="moment-image-wrap">
+                    <img src="London.JPG" alt="You visited me in London" class="moment-image">
+                </div>
+                <div class="moment-text-wrap">
+                    <h3 class="moment-title-text">You visited me in London</h3>
+                    <p class="moment-desc">It was hard to say goodbye when I left to London the first time, but it was more like a "See you later" because you came to visit me and we got a peek into our future life in London. I enjoyed exploring the city and going to the huge shopping mall and I learned for next time to clean the bathroom better.</p>
+                </div>
+            </div>
+
+            <!-- Moment 4: image right, text left -->
+            <div class="moment-row moment-row-reverse">
+                <div class="moment-image-wrap">
+                    <img src="Christmas.JPG" alt="Our first Christmas" class="moment-image">
+                </div>
+                <div class="moment-text-wrap">
+                    <h3 class="moment-title-text">Our first Christmas</h3>
+                    <p class="moment-desc">Even though this wasn't officially Christmas, it felt like it, because we had each other, we prepared nice baskets full of surprises and we watched some Christmas movies. It is definitely a memory I won't forget and I am excited for our next Christmas basket.</p>
+                </div>
+            </div>
+
+            <!-- Moment 5: image left, text right -->
+            <div class="moment-row">
+                <div class="moment-image-wrap">
+                    <img src="Brazil.JPG" alt="New Years in Brazil" class="moment-image">
+                </div>
+                <div class="moment-text-wrap">
+                    <h3 class="moment-title-text">New Years in Brazil</h3>
+                    <p class="moment-desc">It was definitely a new experience for me going to Brazil. It was a struggle to even arrive and once I did it was even harder to understand all your aunts talking at the same time! But I really liked meeting your family and being together in Brazil and you showing me the farm. I also will never forget attending the biggest party in the world together.</p>
+                </div>
+            </div>
+
+            <!-- Moment 6: image right, text left -->
+            <div class="moment-row moment-row-reverse">
+                <div class="moment-image-wrap">
+                    <img src="Tenerife.JPG" alt="5 Staaaars hotel" class="moment-image">
+                </div>
+                <div class="moment-text-wrap">
+                    <h3 class="moment-title-text">5 Staaaars hotel</h3>
+                    <p class="moment-desc">Do I even have to say anything else but 5 staaars. We are living that millionaire lifestyle and nobody can take that away from us. I am still missing our week there and wish we booked for 2 weeks. It was so painful saying goodbye at the airport and I am still missing you since then. Come back faster love.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- VALENTIN'S SHOP TAB -->
+    <div id="shop" class="tab-content">
+        <div class="shop-container">
+            <h2 class="shop-title">🛍️ Valentin's Shop 🛍️</h2>
+            <p class="shop-subtitle">Valentin's is an exclusive establishment with one very very highly valued customer, you! There are various items within the store that are all very high in quality and only come at the small price of 5 beijos (although tips are encouraged). Please enjoy browsing along so that you can choose some items that you like within the shop. Enjoy your shopping experience!</p>
+
+            <div class="shop-grid">
+
+                <!-- Coupon Item 1 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>100% Discount at Valentin's Closet</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>There is a special UNLIMITED time offer you can't miss out on. Valentin's Closet is a fine establishment for customers with elegant taste. Features everything from scarves and caps to elegant pullovers and sporty t-shirts. Can't choose just one? No worries - BUY ONE GET ONE FREE!</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 2 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>Full Body Massage</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>Has it been a long week? Is your body sore? Feeling pains in your legs, back, or feet? Look no further! This is an all-inclusive, very exclusive full body massage. Your personal Valentin will provide his full care and attention, ensuring your entire body feels relaxed, fresh, and satisfied.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 3 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>Spa Day</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>If Valentin is unavailable, contact his assistant Alfredo to schedule a spa day or professional massage at one of our partner massage parlors in Hamburg. Choose from a wide variety of massages and treatments tailored to your preferences.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 4 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>1x Free Skincare</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>Frustrated with expensive skincare products? Look no further! Use this voucher and your boyfriend will buy you nice skincare products so you can maintain that beautiful face and treat it with the highest quality products available.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 5 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>Romantic Dinner</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>You go on nice dates and adventures all the time, but if you want to go to a really fancy restaurant, use this voucher! You will be treated to a fancy, romantic dinner with fantastic food, a drink of your choice, and your gentleman to accompany you for a marvelous evening.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 6 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>Flowers</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>I will always make sure to send you flowers, not just on special occasions but at times you don't expect them or when you need them. If there's a time you haven't received flowers for a while, trade in this coupon for an instant order of a set of beautiful, mysterious flowers.</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 7 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>Alfredo's Butler Service</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>We both know Alfredo is never reliable... we should have fired him long ago! So I will fill in for Alfredo and be your butler for a day. If you request a cold fruit smoothie, breakfast in bed, or a relaxing foot massage, I will get it done for you!</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 8 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>Breakfast in Bed</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>Are you feeling tired and can't get up? But at the same time you feel you are starving and are some minutes away from exploding! This is a perfect scenario to use the breakfast in bed coupon, where your boyfriend will get out of bed and prepare a Michelin Star breakfast and coffee for you!</p>
+                    </div>
+                </div>
+
+                <!-- Coupon Item 9 -->
+                <div class="card shop-item">
+                    <div class="item-header">
+                        <h3>✨ EXCLUSIVE ✨</h3>
+                    </div>
+                    <button class="reveal-btn" onclick="revealCoupon(this)">Click to Reveal</button>
+                    <div class="coupon-content" style="display: none;">
+                        <p>You clicked on EXCLUSIVE and wondered what special thing you could be waiting for! This exclusive item is a Shopping Trip where you can choose one very nice item you want (at a reasonable price please!) and it will be purchased by Valentin's for your use!</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Confetti Container -->
+    <div id="confetti-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
