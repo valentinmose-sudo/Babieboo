@@ -47,9 +47,31 @@ function revealCoupon(button) {
     }
 }
 
+function getRelationshipDuration() {
+    const startDate = new Date('2024-03-24T00:00:00');
+    const now = new Date();
+
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+    let days = now.getDate() - startDate.getDate();
+
+    if (days < 0) {
+        months--;
+        const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+        days += prevMonth.getDate();
+    }
+
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+
+    return { years, months, days };
+}
+
 // LIVE COUNTDOWN TIMER
 function updateCountdown() {
-    const start = new Date('2024-03-16T00:00:00');
+    const start = new Date('2024-03-24T00:00:00');
     const now = new Date();
     let diff = now - start;
 
@@ -60,27 +82,19 @@ function updateCountdown() {
     const totalHours = Math.floor(totalMinutes / 60);
     const hours = totalHours % 24;
 
-    const nowYear = now.getFullYear(), nowMonth = now.getMonth(), nowDay = now.getDate();
-    const startYear = 2024, startMonth = 2, startDay = 16;
+    const relationship = getRelationshipDuration();
+    const relationshipText = `${relationship.years} years, ${relationship.months} months, and ${relationship.days} days`;
 
-    let years = nowYear - startYear;
-    let months = nowMonth - startMonth;
-    let days = nowDay - startDay;
+    const relationshipLength = document.getElementById('relationship-length');
+    if (relationshipLength) {
+        relationshipLength.textContent = relationshipText;
+    }
 
-    if (days < 0) {
-        months--;
-        const prevMonth = new Date(nowYear, nowMonth, 0);
-        days += prevMonth.getDate();
-    }
-    if (months < 0) {
-        years--;
-        months += 12;
-    }
+    document.getElementById('years').textContent = relationship.years;
+    document.getElementById('months').textContent = relationship.months;
+    document.getElementById('days').textContent = relationship.days;
 
     const pad = n => String(n).padStart(2, '0');
-    document.getElementById('years').textContent = years;
-    document.getElementById('months').textContent = months;
-    document.getElementById('days').textContent = days;
     document.getElementById('hours').textContent = pad(hours);
     document.getElementById('minutes').textContent = pad(minutes);
     document.getElementById('seconds').textContent = pad(seconds);
